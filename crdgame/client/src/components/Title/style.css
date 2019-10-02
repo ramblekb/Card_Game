@@ -1,0 +1,17 @@
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  /* margin: 1rem; */
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  /* text-shadow: 4ch; */
+  /* box-shadow: 4cm; */
+  color: rgb(209, 227, 250);
+}
+
+/* .app-header {
+  margin: 1rem;
+  position: relative;
+} */
