@@ -1,8 +1,10 @@
 import React from 'react'
-import DeckCard from '../components/DeckCard'
-import PickedDeck from '../components/PickedDeck'
+import BattleDeck from '../components/BattleDeck'
+import UserPlay from '../components/UserPLay'
 import Title from '../components/Title'
 import Nav from '../components/Nav'
+import DeckCard from '../components/DeckCard'
+
 
 
 function Battle(){
@@ -11,7 +13,8 @@ function Battle(){
         <Nav />
         <Title />
         
-<DeckCard />
+<UserPlay />
+<BattleDeck />
 
 <PickedDeck />
 
