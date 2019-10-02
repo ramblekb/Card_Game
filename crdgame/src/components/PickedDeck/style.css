@@ -1,0 +1,63 @@
+.pickedDeck {
+  margin-bottom: 0rem;
+  font-size: .8cm;
+  position: relative;
+  text-align: left;
+  font-style: initial;
+  color: rgb(111, 27, 221);
+}
+  
+
+
+/* 
+.container-fluid {
+    color-adjust: gray;
+      background: rgb(103, 253, 16);
+      border-radius: 4px;
+      height: full;
+      margin: 2rem;
+      position: relative;
+      width: auto;
+      box-shadow: 0 4px 7px rgb(24, 10, 221), 0 2px 5px rgb(235, 34, 218);
+      text-align: left;
+  } */
+  
+  .divider {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  
+  /* #h1 {
+    text-size-adjust: 2rem;
+    position: relative;
+    text-align: left;
+    font-style: italic;
+  } */
+  
+  /* .card {
+      color-adjust: gray;
+      background: rgb(242, 193, 252);
+      border-radius: 4px;
+      height: 210px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+  
+      position: relative;
+      width: 170px;
+      box-shadow: 0 4px 7px rgb(24, 10, 221), 0 2px 5px rgb(180, 14, 14);
+      text-align: left;
+    } */
+    
+    .card > .img-container {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+      background:rgba(228, 14, 228, 0.973);
+    }
+    .card > .img-container > img {
+      image-orientation: center;
+      padding-top: 1rem;
+      width: 80%;
+      height: 95%
+    }
