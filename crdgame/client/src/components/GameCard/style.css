@@ -1,0 +1,42 @@
+.card-title {
+    font-size: 3rem;
+
+}
+
+.collection-item {
+    font-size: 10px;
+}
+
+.badge {
+    font-size: 10px;
+} 
+
+/* .container {
+    height: 160px;
+    width: 180px;
+} */
+
+/* .card-title {
+    font-size: 10px;
+
+}
+
+.totes {
+    font-size: 10px;
+} */
+
+.collection {
+    /* margin-top: 10%; */
+    /* margin-bottom: 10%; */
+
+    height: 60px;
+}
+
+.collection-item {
+    height: 20px;
+}
+
+.badge {
+    height: 10px;
+
+}

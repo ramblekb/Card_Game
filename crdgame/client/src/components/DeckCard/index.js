@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import GameCard from "../GameCard"
 
 // insert props in DeckCard
 function DeckCard() {
@@ -26,7 +27,7 @@ function DeckCard() {
     
     <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
@@ -34,10 +35,12 @@ function DeckCard() {
 </div>
 </div>
   </div>
+  </div>
+
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
@@ -45,171 +48,178 @@ function DeckCard() {
 </div>
 </div>
   </div>
+  </div>
+
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
     
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
+  </div>
+  <div className="row">
+      <div classname="container">
+      <div className="col s12 m6 s2">
+      <div className="card" id="deckCard" onClick="">
+      <div className="img-container">
+        <img src="images/sample-1.jpg" alt="" />
+</div>
+</div>
+</div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
   <div className="row">
       <div classname="container">
-      <div className="col s12 m6 s2"></div>
+      <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
         <img src="images/sample-1.jpg" alt="" />
 </div>
 </div>
 </div>
+  </div>
   </div>
 
-  <div className="row">
-      <div classname="container">
-      <div className="col s12 m6 s2"></div>
-      <div className="card" id="deckCard" onClick="">
-      <div className="img-container">
-        <img src="images/sample-1.jpg" alt="" />
-</div>
-</div>
-</div>
-  </div>
 
-  <div className="row">
-      <div classname="container">
-      <div className="col s12 m6 s2"></div>
-      <div className="card" id="deckCard" onClick="">
-      <div className="img-container">
-        <img src="images/sample-1.jpg" alt="" />
-</div>
-</div>
-</div>
-  </div>
+  <GameCard />
 
   
 
