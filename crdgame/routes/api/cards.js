@@ -8,8 +8,8 @@ const jwtVerify = require("../../config/jwt");
 //   .post(jwtVerify.confirmToken, jwtVerify.verifyToken, cardsController.create);
 
   router.route("/")
-  .get(jwtVerify.confirmToken, jwtVerify.verifyToken, cardsController.findAll)
-  .post(jwtVerify.confirmToken, jwtVerify.verifyToken, cardsController.create);
+  .get(cardsController.findAll)
+  .post(cardsController.create);
 
   // router
   // .route("/:id")
