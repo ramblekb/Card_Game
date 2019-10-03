@@ -3,7 +3,7 @@ import React from 'react';
 // import Nav from './components/Nav';
 // import Login from './pages/Login';
 import Deck from './pages/Deck';
-// import Battle from './pages/Battle';
+import Battle from './pages/Battle';
 
 
 function App() {
@@ -15,7 +15,9 @@ function App() {
     <Route exact path="/" component={Deck} />
     {/* <Route exact path="/login" component={Login} /> */}
     <Route exact path="/deck" component={Deck} />
-    {/* <Route exact path="/battle" component={Battle} /> */}
+
+    <Route exact path="/battle" component={Battle} />
+
 
 
 

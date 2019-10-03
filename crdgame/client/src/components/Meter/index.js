@@ -1,0 +1,58 @@
+import React from 'react'
+import "./style.css";
+
+
+
+
+function Meter(){
+  return (
+    
+    <div id="page-wrapper">
+    <h1>Progress and Meter Elements</h1>
+    
+    <h2>Progress Elements</h2>
+  
+    <p>Default</p>
+    <p>
+      <progress max="100"></progress>
+    </p>
+    <p>
+      <progress value="50" max="100"></progress>
+    </p>
+  
+    <p>Styled</p>
+    <p class="styled">
+      <progress max="100"></progress>
+    </p>
+    <p class="styled">
+      <progress value="50" max="100"></progress>
+    </p>
+  
+    <h2>Meter Elements</h2>
+    <p>Default</p>
+    <p>
+      <meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
+    </p>
+    <p>
+      <meter min="0" max="100" low="25" high="75" optimum="100" value="50"></meter>
+    </p>
+    <p>
+      <meter min="0" max="100" low="25" high="75" optimum="100" value="80"></meter>
+    </p>
+  
+    <p>Styled</p>
+    <p class="styled">
+      <meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
+    </p>
+    <p class="styled">
+      <meter min="0" max="100" low="25" high="75" optimum="100" value="50"></meter>
+    </p>
+    <p class="styled">
+      <meter min="0" max="100" low="25" high="75" optimum="100" value="80"></meter>
+    </p>
+  </div>
+
+ 
+  )
+}
+export default Meter;
