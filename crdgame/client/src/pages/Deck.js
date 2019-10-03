@@ -1,23 +1,30 @@
-import React from 'react'
+import React, { Component } from 'react'
 import DeckCard from '../components/DeckCard'
 import PickedDeck from '../components/PickedDeck'
 import Title from '../components/Title'
 import Nav from '../components/Nav'
 
+class Books extends Component {
+  state = {
+    books: [],
+    title: "",
+    author: "",
+    synopsis: ""
+  };
 
-function Deck(){
+  render() {
     return (
-        <div>
+      <div>
         <Nav />
         <Title />
-        
-<DeckCard />
 
-<PickedDeck />
+        <DeckCard />
+
+        <PickedDeck />
 
 
-        </div>
-        )
-      }
-    export default Deck;
-    
+      </div>
+    )
+  }
+}
+export default Deck;
