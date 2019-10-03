@@ -1,7 +1,6 @@
 import React from "react";
 import Axios from "axios";
 import {Redirect, NavLink} from "react-router-dom";
-import "./login.css"
 
 class Login extends React.Component{
     constructor(props){
