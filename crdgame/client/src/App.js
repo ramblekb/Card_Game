@@ -15,7 +15,9 @@ function App() {
     <Route exact path="/" component={Deck} />
     {/* <Route exact path="/login" component={Login} /> */}
     <Route exact path="/deck" component={Deck} />
+
     <Route exact path="/battle" component={Battle} />
+
 
 
 
