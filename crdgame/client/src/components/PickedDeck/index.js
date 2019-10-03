@@ -1,5 +1,7 @@
 import React from 'react'
 import "./style.css";
+import Mars from '../mars.jpg'
+
 
 
 function PickedDeck(){
@@ -20,7 +22,7 @@ function PickedDeck(){
       <div className="col s12 m6 s2">
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
-        <img src="images/sample-1.jpg" alt="" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1024px-OSIRIS_Mars_true_color.jpg" alt="smiley" />
 </div>
 </div>
 </div>
@@ -31,7 +33,7 @@ function PickedDeck(){
       <div className="col s12 m6 s2"></div>
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
-        <img src="images/sample-1.jpg" alt="" />
+        <img src={Mars} alt="" />
 </div>
 </div>
 </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.css";
 
 
-function PickedDeck(){
+function UserPlay(){
 
 // maybe onClick event listener here 
   return (
@@ -86,4 +86,4 @@ function PickedDeck(){
 
   )
 }
-export default PickedDeck;
+export default UserPlay;

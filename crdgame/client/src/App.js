@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from 'react';
 // import Nav from './components/Nav';
@@ -13,14 +12,18 @@ function App() {
     <div>
     
     <Switch>
-  
+    <Route exact path="/" component={Deck} />
+    {/* <Route exact path="/login" component={Login} /> */}
     <Route exact path="/deck" component={Deck} />
     <Route exact path="/battle" component={Battle} />
-    </Switch>
-</div>
-</Router>
 
-    );
-  }
-    
+
+
+    </Switch>
+      
+    </div>
+    </Router>
+  );
+}
+
 export default App;
