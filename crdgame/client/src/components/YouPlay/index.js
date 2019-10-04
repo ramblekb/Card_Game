@@ -71,7 +71,7 @@ import Mars from '../mars.jpg'
 
 
 
-function BattleDeck(){
+function YouPlay(){
 
 // maybe onClick event listener here 
   return (
@@ -82,7 +82,7 @@ function BattleDeck(){
     {/* <a className="waves-effect waves-light btn">Save Deck</a> */}
     </div>
              
-    <h1 className="pickedDeck">VS CARD</h1>
+    <h1 className="pickedDeck">Play Your Card</h1>
     
     <div className="divider"></div>
     
@@ -114,7 +114,29 @@ function BattleDeck(){
   </div>
   </div>
 
-  
+  <div className="row">
+      <div classname="container">
+      <div className="col s12 m6 s2">
+      <div className="card" id="deckCard" onClick="">
+      <div className="img-container">
+        <img src={Mars} alt="" />
+</div>
+</div>
+</div>
+  </div>
+  </div>
+    
+    <div className="row">
+      <div classname="container">
+      <div className="col s12 m6 s2">
+      <div className="card" id="deckCard" onClick="">
+      <div className="img-container">
+        <img src={Mars} alt="" />
+</div>
+</div>
+</div>
+  </div>
+  </div>
 
 
   
@@ -140,5 +162,5 @@ function BattleDeck(){
 
   )
 }
-export default BattleDeck;
+export default YouPlay;
 

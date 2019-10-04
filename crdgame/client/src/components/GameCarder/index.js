@@ -30,6 +30,8 @@ function GameCarder() {
 </div>
   </div>
     
+  </div>
+  </div>
  
   );
 }
