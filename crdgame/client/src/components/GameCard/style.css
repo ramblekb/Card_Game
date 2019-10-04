@@ -4,39 +4,23 @@
 }
 
 .collection-item {
-    font-size: 10px;
+    font-size: 9px;
 }
 
-.badge {
-    font-size: 10px;
-} 
 
-/* .container {
-    height: 160px;
-    width: 180px;
-} */
 
-/* .card-title {
-    font-size: 10px;
-
-}
-
-.totes {
-    font-size: 10px;
-} */
 
 .collection {
-    /* margin-top: 10%; */
-    /* margin-bottom: 10%; */
 
-    height: 60px;
+    height: 100px;
 }
 
 .collection-item {
-    height: 20px;
+    height: 10px;
 }
 
 .badge {
-    height: 10px;
+    height: 5px;
+    position: auto;
 
 }

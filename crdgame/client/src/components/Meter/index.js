@@ -8,7 +8,7 @@ function Meter(){
   return (
     
     <div id="page-wrapper">
-    <h1>Progress and Meter Elements</h1>
+    {/* <h1>Progress and Meter Elements</h1>
     
     <h2>Progress Elements</h2>
   
@@ -18,38 +18,27 @@ function Meter(){
     </p>
     <p>
       <progress value="50" max="100"></progress>
-    </p>
+    </p> */}
   
-    <p>Styled</p>
-    <p class="styled">
-      <progress max="100"></progress>
-    </p>
+    <p>Power</p>
+    
     <p class="styled">
       <progress value="50" max="100"></progress>
     </p>
   
-    <h2>Meter Elements</h2>
-    <p>Default</p>
-    <p>
+    {/* <h2>Bread or Manna</h2> */}
+    <p>Food</p>
+    {/* <p>
       <meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
     </p>
     <p>
       <meter min="0" max="100" low="25" high="75" optimum="100" value="50"></meter>
-    </p>
+    </p> */}
     <p>
       <meter min="0" max="100" low="25" high="75" optimum="100" value="80"></meter>
     </p>
   
-    <p>Styled</p>
-    <p class="styled">
-      <meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
-    </p>
-    <p class="styled">
-      <meter min="0" max="100" low="25" high="75" optimum="100" value="50"></meter>
-    </p>
-    <p class="styled">
-      <meter min="0" max="100" low="25" high="75" optimum="100" value="80"></meter>
-    </p>
+    
   </div>
 
  

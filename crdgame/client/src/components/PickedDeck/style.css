@@ -9,12 +9,12 @@
 
 .pickedDeck {
   /* margin-bottom: 0rem; */
-  font-size: .8cm;
+  font-size: .6cm;
   position: relative;
   text-align: left;
   font-style: initial;
   color: rgb(111, 27, 221);
-  /* margin-top: 1rem; */
+  margin-top: 4rem;
 }
 
 /* .waves-effect waves-light btn {

@@ -27,7 +27,7 @@ function GameCard() {
       <li className="collection-item">Demage<span className="badge">1</span></li>      
     </ul> */}
 
-    {/* <div class="card-content"> */}
+    <div class="card-content">
         
 <ul className="collection">
       <li className="collection-item">Cost<span className="badge">0</span></li>
@@ -45,7 +45,7 @@ function GameCard() {
     </ul>
         </div> */}
 </div>
-// </div>
+</div>
   // </div>
   //  </div>
   
