@@ -9,6 +9,7 @@ function ZoomCard() {
   return (
 
 <div>
+
 <div className="container" id="zoomCard">
   <img  src={Mars} onClick="" alt="Avatar" className="image">
   </img>

@@ -5,6 +5,10 @@ import Login from './pages/Login';
 import Deck from './pages/Deck';
 import Battle from './pages/Battle';
 import Home from './pages/Home';
+import Griddy from './pages/Griddy';
+import VerseP from './pages/VerseP';
+
+
 
 
 
@@ -23,6 +27,9 @@ function App() {
     <Route exact path="/battle" component={Battle} />
 
     <Route exact path="/home" component={Home} />
+    <Route exact path="/griddy" component={Griddy} />
+    <Route exact path="/verseP" component={VerseP} />
+
 
 
 

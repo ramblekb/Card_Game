@@ -7,7 +7,7 @@ import Mars from '../images/mars.jpg'
 
 
 
-function PickedDeck(){
+function YourTurn(){
 
 // maybe onClick event listener here 
   return (
@@ -17,7 +17,7 @@ function PickedDeck(){
     <h1 className="pickDeck">Your Cards (Picked Deck)</h1>
     <div className="float-right">
 
-    <div className="float-right">
+    {/* <div className="float-right"> */}
     {/* <div className="waves-effect waves-light btn" id="saveB">Save Deck</div> */}
     
     </div>
@@ -30,27 +30,26 @@ function PickedDeck(){
  
     <div className="row">
     
-    <div className="col s12 m6 s2">
+    <div className="col s12 m6 l2">
     {/* <div className="card" id="deckCard" onClick=""> */}
   
     <div className="row">
-    
-    <div className="col s12 m6 s2"></div>
-  <FlipCard />
-  <FlipCard />
-  <FlipCard />
-  <div className="row">
-    
-    <div className="col s12 m6 s2"></div>
-  <FlipCard />
-  <FlipCard />
-  <FlipCard />
+    <FlipCard />
+    <FlipCard />
+    <FlipCard />
+     <FlipCard />
+     <FlipCard />
+     <FlipCard />
 
-  {/* <FlipCard />
-  <FlipCard />
-  <FlipCard /> */}
+
+   
+  </div>
+  {/* <div className="row">
+    <div className="col s12 m6 l2">
+    <FlipCard />
+
 </div>
-</div>
+</div> */}
 </div>
 </div>
     
@@ -91,8 +90,8 @@ function PickedDeck(){
 </div>
   </div>
   </div>
-  </div>
+  // </div>
 
   )
 }
-export default PickedDeck;
+export default YourTurn;
