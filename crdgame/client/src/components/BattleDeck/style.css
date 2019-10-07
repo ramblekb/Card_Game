@@ -7,7 +7,7 @@ body {
     color-adjust: rgb(54, 1, 1);
       background: rgb(242, 193, 252);
       /* background-image: url(../../saturn.jpg); */
-      border-radius: 10px;
+      border-radius: 8px;
       height: full;
       width: 90%;
       margin-top: 0rem;
@@ -34,9 +34,9 @@ body {
   
   
   .card {
+    position: relative;
       color-adjust: gray;
       background: rgb(242, 193, 252);
-      border-radius:8px;
       width: 130px;
       height: 175px;
 padding: 1px;

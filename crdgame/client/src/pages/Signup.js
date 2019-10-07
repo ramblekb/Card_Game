@@ -1,6 +1,9 @@
 import React from "react"
 import Axios from "axios"
 import {Redirect} from "react-router-dom"
+import Nav from '../components/Nav'
+
+
 
 class Signup extends React.Component {
     constructor(props){
@@ -43,6 +46,7 @@ class Signup extends React.Component {
     render(){
         if(!this.state.signedUp) {
         return <div className="container">
+        <Nav />
         <form>
         Username: <input type="text" name="username" class="form-control" value={this.state.username} onChange={this.handleChange} /><br />
         Password: <input type="password" name="password" class="form-control" value={this.state.password} onChange={this.handleChange} /><br />

@@ -1,7 +1,8 @@
 import React from 'react'
 import FlipCard from '../components/FlipCard'
-import Title from '../components/Title'
 import Nav from '../components/Nav'
+import ZoomCard from '../components/ZoomCard'
+
 
 
 
@@ -9,10 +10,10 @@ function Home(){
     return (
         <div>
         <Nav />
-        <Title />
         
 <FlipCard />
 
+<ZoomCard />
 
         </div>
         )

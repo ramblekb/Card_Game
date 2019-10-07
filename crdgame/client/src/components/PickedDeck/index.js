@@ -1,9 +1,9 @@
 import React from 'react'
 import "./style.css";
-import GameCarder from '../GameCarder'
+import ZoomCard from '../ZoomCard'
 import FlipCard from '../FlipCard'
 
-import Mars from '../mars.jpg'
+import Mars from '../images/mars.jpg'
 
 
 
@@ -97,7 +97,7 @@ function PickedDeck(){
   <FlipCard />
 
 
-<GameCarder />
+<ZoomCard />
 
 
 

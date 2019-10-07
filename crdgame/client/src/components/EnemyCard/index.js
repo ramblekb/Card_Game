@@ -1,12 +1,11 @@
 import React from 'react'
 import "./style.css";
 import Meter from '../Meter'
+import FlipCard from '../FlipCard';
 
 
 
-function UserPlay(){
-
-// maybe onClick event listener here 
+function EnemyCard(){
   return (
     <div>
     
@@ -19,10 +18,10 @@ function UserPlay(){
 
  <Meter />
     
-    
+    <FlipCard />
 
-  {/* <div className="row"> */}
-      {/* <div classname="container"> */}
+  {/* <div className="row">
+      <div classname="container">
       <div className="col s12 m6 s2"></div>
       <div className="card" id="deckCard" onClick="">
       <div className="img-container">
@@ -31,11 +30,11 @@ function UserPlay(){
 </div>
 
 </div>
+  </div> */}
   </div>
-  // </div>
-  // </div>
+  </div>
   
 
   )
 }
-export default UserPlay;
+export default EnemyCard;

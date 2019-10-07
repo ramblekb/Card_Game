@@ -2,6 +2,9 @@ import React from "react";
 import Axios from "axios";
 import {Redirect, NavLink} from "react-router-dom";
 
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+
 class Login extends React.Component{
     constructor(props){
         super(props)
@@ -41,7 +44,10 @@ class Login extends React.Component{
 
     render(){
         if(!this.state.loggedIn){
-            return <div className="container">
+            return 
+
+            <Container>
+            <div className="container">
             <form>
             <div class="form-group">
             Username: <input type="text" class="form-control" name="username" value={this.state.username} onChange={this.handleChange} />
@@ -69,6 +75,7 @@ class Login extends React.Component{
           </a>
         </div>
         </div>
+        </Container>
         }
         else {
             return <Redirect to={{pathname: "/books", state: {loggedIn: true}}}/>

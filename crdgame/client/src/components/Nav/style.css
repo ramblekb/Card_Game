@@ -1,4 +1,8 @@
-
+.App-header {
+    text-align: center;
+    font-style: normal;
+    color: rgb(209, 227, 250);
+  }
 
 .header {
     /* align-content: center; */

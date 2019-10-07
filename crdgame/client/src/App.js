@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from 'react';
-// import Nav from './components/Nav';
-// import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
 import Deck from './pages/Deck';
 import Battle from './pages/Battle';
 import Home from './pages/Home';
@@ -14,8 +14,10 @@ function App() {
     <div>
     
     <Switch>
-    <Route exact path="/" component={Deck} />
-    {/* <Route exact path="/login" component={Login} /> */}
+    <Route exact path="/" component={Home} />
+    <Route exact path="/login" component={Login} />
+    <Route exact path="/signup" component={Signup} />
+
     <Route exact path="/deck" component={Deck} />
 
     <Route exact path="/battle" component={Battle} />

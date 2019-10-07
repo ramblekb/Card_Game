@@ -6,7 +6,7 @@
 
 
 .enemyCard {
-    /* margin-bottom: 0rem; */
+    
     font-size: .5cm;
     padding-top: 1rem;
     position: relative;
@@ -25,7 +25,7 @@
   /* padding-left: 100px;  */
   /* margin-top: 10px; */
 
-  width: 70%;
+  width: 80%;
 }
 
   meter {
@@ -33,5 +33,5 @@
     height: 20px;
     padding-left: 100px; 
     margin-top: 10rem; */
-    width: 70%
+    width: 80%
   }

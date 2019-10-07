@@ -4,7 +4,7 @@ import React from 'react'
 import "./style.css";
 import VerticalSlider from '../VerticalSlider'
 
-import Mars from '../mars.jpg'
+import Mars from '../images/mars.jpg'
 
 
 

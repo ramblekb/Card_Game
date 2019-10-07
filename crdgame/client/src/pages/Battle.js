@@ -1,16 +1,12 @@
 import React from 'react'
-// import BattleDeck from '../components/BattleDeck'
-// import UserPlay from '../components/UserPlay'
-import Title from '../components/Title'
 import Nav from '../components/Nav'
 import DeckCard from '../components/DeckCard'
-import CustomizedSlider from '../components/CustomizedSlider'
 import PickedDeck from '../components/PickedDeck'
 
 import YouPlay from '../components/YouPlay'
 import Meter from '../components/Meter'
 import BattleDeck from '../components/BattleDeck'
-import UserPlay from '../components/UserPlay'
+import EnemyCard from '../components/EnemyCard'
 import VerticalSlider from '../components/VerticalSlider'
 import VertIcon from '../components/VertIcon'
 
@@ -23,40 +19,23 @@ function Battle(){
     return (
         <div>
         <Nav />
-        <Title />
-
-
 
 <VertIcon />
-<UserPlay>
-<CustomizedSlider />
-</UserPlay>
+<EnemyCard>
+</EnemyCard>
 
-
-<div>
-<BattleDeck>
-
-<Meter />
-</BattleDeck>
-
-</div>
-
-
+<BattleDeck />
 
 <div>
-
 
 <YouPlay>
-
-
 <VerticalSlider />
-
-
-
 </YouPlay>
+
+</div>
 </div>
 
-        </div>
+  
         )
       }
 export default Battle;

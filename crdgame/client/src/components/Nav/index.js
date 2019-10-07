@@ -15,9 +15,17 @@ function Nav(){
       <li className="tab purple"><a className="active" href="/Login">Login</a></li>
       <li className="tab purple"><a className="active" href="/Deck">Deck</a></li>
       <li className="tab purple"><a className="active" href="/Battle">Battle</a></li>
+      <li className="tab purple"><a className="active" href="/Signup">SignUp</a></li>
+
 
     </ul>
   </div>
+
+  <div className="App-header">
+  <h1 className="title">SPACE CARDS</h1>
+  </div>
+
+
   </div>
  
   )

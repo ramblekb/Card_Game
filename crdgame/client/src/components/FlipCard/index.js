@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./style.css";
-import Jupiter from "../jupiter.jpg";
+import Jupiter from "../images/jupiter.jpg";
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
