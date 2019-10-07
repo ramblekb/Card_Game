@@ -7,39 +7,25 @@ import "./style.css";
 function Meter(){
   return (
     
-    <div id="page-wrapper">
-    {/* <h1>Progress and Meter Elements</h1>
     
-    <h2>Progress Elements</h2>
-  
-    <p>Default</p>
-    <p>
-      <progress max="100"></progress>
-    </p>
-    <p>
+    <div>
+    <div className="vertical-menu">
       <progress value="50" max="100"></progress>
-    </p> */}
+      <p>Power</p>
+
+
+    </div>
   
-    <p>Power</p>
+    <div class="event_desc">
     
-    <p class="styled">
-      <progress value="50" max="100"></progress>
-    </p>
-  
-    {/* <h2>Bread or Manna</h2> */}
-    <p>Food</p>
-    {/* <p>
-      <meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
-    </p>
-    <p>
-      <meter min="0" max="100" low="25" high="75" optimum="100" value="50"></meter>
-    </p> */}
-    <p>
       <meter min="0" max="100" low="25" high="75" optimum="100" value="80"></meter>
-    </p>
+      <p>Food</p>
+
+    </div>
   
-    
-  </div>
+    </div>
+
+  
 
  
   )

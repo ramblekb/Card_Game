@@ -1,26 +1,50 @@
-.card-title {
-    font-size: 3rem;
+.cardName {
 
+    font-size: 1rem;
+}
+/* 
+.img-container {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+
+} */
+
+
+.card-content {
+    float: center;
+    position: center;
 }
 
 .collection-item {
-    font-size: 9px;
-}
-
-
-
-
-.collection {
-
-    height: 100px;
-}
-
-.collection-item {
-    height: 10px;
-}
-
-.badge {
-    height: 5px;
-    position: auto;
+    font-size: 10px;
+    padding: 2px;
+    
 
 }
+
+/* .badge {
+    position: center;
+} */
+
+.costDamage-container {
+    
+        position: relative;
+        /* bottom: 8px; */
+        left: 10px;
+        right: 2px;
+        height: 25px;
+        top: 120px;
+
+        width: 100px;
+        /* border: 1px solid #73AD21; */
+      }
+
+
+
+
+
+.card-image {
+    max-height: 100px;
+    max-width: auto;
+}
+

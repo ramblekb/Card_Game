@@ -9,26 +9,23 @@ body {
       /* background-image: url(../../saturn.jpg); */
       border-radius: 10px;
       height: full;
-      width: 800px;
+      width: 90%;
       margin-top: 0rem;
       margin-bottom: 0rem;
   
-      margin: 8rem;
       position: relative;
       box-shadow: 0 28px 24px rgb(24, 10, 221), 0 20px 25px rgb(235, 34, 218);
       text-align: left;
   }
-  
   .pickDeck {
-    /* margin-top: 2rem; */
     margin-bottom: 0rem;
+    padding: 1px;
     font-size: .8cm;
     position: relative;
     text-align: left;
     font-style: initial;
     color: rgb(111, 27, 221);
-    /* background-image: url(../../logo.png) */
-  }
+  } 
   
   .divider {
     margin-top: .5px;
@@ -39,15 +36,10 @@ body {
   .card {
       color-adjust: gray;
       background: rgb(242, 193, 252);
-      border-radius:6px;
-      width: 100px;
-      height: 140px;
-    /* padding-inline: 1rem; */
-      /* margin-top: 0rem; */
-      /* margin-bottom: 2rem; */
-  
-      /* position: relative; */
-     
+      border-radius:8px;
+      width: 130px;
+      height: 175px;
+padding: 1px;
       box-shadow: 0 4px 7px rgb(24, 10, 221), 0 2px 5px rgb(180, 14, 14);
       text-align: left;
       
@@ -62,8 +54,8 @@ body {
     }
     .card > .img-container > img {
       image-orientation: center;
-      padding-top: 2rem;
-      padding-bottom: 0rem;
-      width: 80%;
-      height: 80%;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      width: 90%;
+      height: 95%;
     }

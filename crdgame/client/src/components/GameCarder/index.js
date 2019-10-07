@@ -5,35 +5,24 @@ import "./style.css";
 function GameCarder() {
   return (
 
-<div className="container-fluid">
-    <div className="float-right">
-    <a className="waves-effect waves-light btn">Save Deck</a>
+<div>
+<div>
+    <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/office.jpg" alt="yo">
+    </img>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><div href="#">This is a link</div></p>
     </div>
-             
-    <h1 className="pickedDeck">Your Deck</h1>
-    
-    <div className="divider"></div>
-    
- 
-    <div className="row">
-
-      <div classname="container" id="decker">
-      <div className="col s12 m6 s2">
-      <div className="card" onClick="">
-      <div className="con">CardName</div>
-      <div className="img-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1024px-OSIRIS_Mars_true_color.jpg" alt="smiley" />
-</div>
-      <div className="con">0</div>
-
-</div>
-</div>
-  </div>
-    
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
   </div>
   </div>
- 
-  );
-}
+  </div>
+  </div>
 
+  )}
 export default GameCarder;

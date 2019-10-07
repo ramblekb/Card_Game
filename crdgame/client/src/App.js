@@ -4,6 +4,8 @@ import React from 'react';
 // import Login from './pages/Login';
 import Deck from './pages/Deck';
 import Battle from './pages/Battle';
+import Home from './pages/Home';
+
 
 
 function App() {
@@ -17,6 +19,9 @@ function App() {
     <Route exact path="/deck" component={Deck} />
 
     <Route exact path="/battle" component={Battle} />
+
+    <Route exact path="/home" component={Home} />
+
 
 
 

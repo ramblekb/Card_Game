@@ -4,52 +4,50 @@ import "./style.css";
 // insert props in DeckCard
 function GameCard() {
   return (
-
-
-    
+<div>
 
     <div className="row">
+          {/* <div className="col s12 m6 s2"> */}
 
       {/* <div classname="container"> */}
+      <div class="cardDesign">
+      {/* <div class="card-image"> */}
+      {/* <span className="cardName">CardName</span> */}
+
       {/* <div className="col s12 m6 s2"> */}
-      <div class="card">
-        <div class="card-image">
-      {/* <div className="card" id="deckCard" onClick=""> */}
-      {/* <span class="card-title">name of card</span> */}
-      {/* <div className="img-container"> */}
-      <span className="card-title">card name</span>
-      {/* <h1 className="tote">Card Name</h1> */}
+      <div className="card" id="deckCard" onClick="">
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1024px-OSIRIS_Mars_true_color.jpg" alt="" />
+      <div className="img-container">
+      <span className="cardName">CardName</span>
 
-        {/* <ul className="collection">
-      <li className="collection-item">Cost<span className="badge">0</span></li>
-      <li className="collection-item">Demage<span className="badge">1</span></li>      
-    </ul> */}
+      <img className="card-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1024px-OSIRIS_Mars_true_color.jpg" alt="" />
+      
+      
+      <div className="costDamage">
+<span className="collection-item">Cost
 
-    <div class="card-content">
-        
-<ul className="collection">
-      <li className="collection-item">Cost<span className="badge">0</span></li>
-      <li className="collection-item">Demage<span className="badge">1</span></li>      
-    </ul> 
 
-        </div>
-        </div>
+<li className="badge">0</li>
+</span>
 
- {/* </div> */}
-{/* <div className="card-content">
-<ul className="collection">
-      <li className="collection-item">Cost<span className="badge">0</span></li>
-      <li className="collection-item">Demage<span className="badge">1</span></li>      
-    </ul>
-        </div> */}
+<span className="collection-item">Demage
+
+<li className="badge">1</li> 
+</span>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 </div>
-  // </div>
-  //  </div>
-  
- 
+
   );
 }
 

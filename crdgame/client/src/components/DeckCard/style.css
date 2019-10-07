@@ -4,74 +4,19 @@ body {
 
 
 .container-fluid {
-  /* color-adjust: rgb(54, 1, 1); */
     background: rgb(242, 193, 252);
-    /* background-image: url(../../saturn.jpg); */
-    border-radius: 8px;
-    height: full;
-    /* width: 800px; */
-    margin-top: 0rem;
+    border-radius: 4px;
+    height: full;    
     margin-bottom: 0rem;
 
-    /* margin: 8rem; */
     position: relative;
     box-shadow: 0 28px 24px rgb(24, 10, 221), 0 20px 25px rgb(235, 34, 218);
     text-align: left;
 }
 
-/* .container {
-  height: 20px;
-  width: 2px;
-} */
-
-
-/* .pickDeck {
-  margin-bottom: 0rem;
-  font-size: .8cm;
-  position: relative;
-  text-align: left;
-  font-style: initial;
-  color: rgb(111, 27, 221);
-} */
 
 .divider {
   margin-top: .5px;
   margin-bottom: .5px;
 }
 
-
-/* .card {
-    color-adjust: gray;
-    background: rgb(242, 193, 252);
-    border-radius: 2px;
-    width: 100px;
-    height: 100px;
-    
-    margin-top: 0rem;
-
-    position: relative;
-   
-    box-shadow: 0 4px 7px rgb(24, 10, 221), 0 2px 5px rgb(180, 14, 14);
-    text-align: left;
-    
-  } */
-
-  /* .deckCard {
-    width: 100px;
-    height: 100px;
-  } */
-  
-  /* .card > .img-container {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    background:rgba(228, 14, 228, 0.973);
-  } */
-  /* .card > .img-container > img {
-    image-orientation: center;
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-    width: 80%;
-    height: 100%;
-  } */

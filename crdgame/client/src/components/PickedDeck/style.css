@@ -1,6 +1,10 @@
 
-.con {
-  position: right;
+#deleteB {
+/* padding: 8rem; */
+margin-right: 1rem
+
+
+
 }
 
 .container {
@@ -9,7 +13,7 @@
 
 .pickedDeck {
   /* margin-bottom: 0rem; */
-  font-size: .6cm;
+  font-size: .5cm;
   position: relative;
   text-align: left;
   font-style: initial;
