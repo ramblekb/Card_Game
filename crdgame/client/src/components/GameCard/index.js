@@ -12,10 +12,10 @@ function GameCard(props) {
 
       // {/* <div classname="container"> */}
       // {/* <div className="col s12 m6 s2"> */}
-      <div class="card" data-id= {props.Card.id}>
-        <div class="card-image">
+      <div className="card" data-id = {props.Card._id} onClick={props.onClick}>
+        <div className="card-image">
       {/* <div className="card" id="deckCard" onClick=""> */}
-      {/* <span class="card-title">name of card</span> */}
+      {/* <span className="card-title">name of card</span> */}
       {/* <div className="img-container"> */}
       <span className="card-title">{props.Card.name}</span>
       {/* <h1 className="tote">Card Name</h1> */}
@@ -27,7 +27,7 @@ function GameCard(props) {
       <li className="collection-item">Demage<span className="badge">1</span></li>      
     </ul> */}
 
-    {/* <div class="card-content"> */}
+    {/* <div className="card-content"> */}
         
 <ul className="collection">
       <li className="collection-item">Cost<span className="badge">{props.Card.cost}</span></li>

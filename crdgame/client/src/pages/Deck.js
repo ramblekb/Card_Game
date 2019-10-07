@@ -10,6 +10,7 @@ class Deck extends Component {
   state = {
     allCard: [],
     deck: [],
+    deckId: [],
     userId: []
   };
   componentDidMount() {
@@ -29,25 +30,43 @@ class Deck extends Component {
       )
       .catch(err => console.log(err));
 
-    // axios.get("/api/users/" + 1)
+    // axios.get("/api/users/" + "5d96a88b724f144104a912b4")
     //   .then(res =>{
     //     this.setState({ userId: res.data })
-    //     console.log(this.state.allCard)
     //   }
     //   )
     //   .catch(err => console.log(err));
   };
 
   cardClicked = event => {
-    console.log(this.state.deck)
-    let selected = event.target.attributes.getNamedItem("data-id").value
-    axios.get("/api/users/" + 1)
-      .then(res =>{
-        let yourDeck = this.state.deck; 
-        yourDeck.push(res.data)
-        this.setState({ deck: yourDeck })}
+    console.log(this.state.deckId)
+    console.log(event.currentTarget.attributes.getNamedItem("data-id").value)
+    let selected = event.currentTarget.attributes.getNamedItem("data-id").value
+    axios.get("/api/cards/" + selected)
+      .then(res => {
+        let yourDeck = this.state.deck;
+        let yourDeckId = this.state.deckId;
+        if ((yourDeckId.length < 6) && (yourDeckId.indexOf(selected) < 0)) {
+          yourDeck.push(res.data)
+          yourDeckId.push(selected)
+          this.setState({ deck: yourDeck, deckId: yourDeckId })
+        }
+      }
       )
       .catch(err => console.log(err));
+  }
+
+  handleSave = event => {
+    event.preventDefault()
+      console.log(this.state.deckId.length)
+    if (this.state.deckId.length === 6) {
+      axios.put("/api/users/" + "5d96a88b724f144104a912b4", {deck: this.state.deckId})
+      .then(res =>{
+        console.log(this.state.deckId.length)
+      }
+      )
+      .catch(err => console.log(err));
+    }
   }
 
   render() {
@@ -57,9 +76,9 @@ class Deck extends Component {
 
         <Title />
 
-        <DeckCard allCard={this.state.allCard}/>
+        <DeckCard allCard={this.state.allCard} cardClicked={this.cardClicked} />
 
-        <PickedDeck />
+        <PickedDeck deck={this.state.deck} handleSave={this.handleSave}/>
 
       </div>
     )

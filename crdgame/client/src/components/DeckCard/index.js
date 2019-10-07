@@ -14,7 +14,7 @@ function DeckCard(props) {
 
         <div className="row">
         {props.allCard.map(Card => (
-        <GameCard Card = {Card} />
+        <GameCard Card = {Card} onClick={props.cardClicked}/>
             ))}
         </div>
       </div>
