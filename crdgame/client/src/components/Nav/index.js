@@ -16,6 +16,10 @@ function Nav(){
       <li className="tab purple"><a className="active" href="/Deck">Deck</a></li>
       <li className="tab purple"><a className="active" href="/Battle">Battle</a></li>
       <li className="tab purple"><a className="active" href="/Signup">SignUp</a></li>
+      <li className="tab purple"><a className="active" href="/VerseP">VerseP</a></li>
+      <li className="tab purple"><a className="active" href="/Griddy">Griddy</a></li>
+
+
 
 
     </ul>
