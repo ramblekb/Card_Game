@@ -20,7 +20,7 @@ function FlipCard() {
                 ></img>
 
                 <div className="flip-card-inner">
-                    <div className="flip-card-back">
+                    <div className="flip-card-back" id="flipCardImg">
                         <h1 className="red fancy">Space Card</h1>
                         <p className="red fancy">Jupiter</p>
                         <div className="costDamage">

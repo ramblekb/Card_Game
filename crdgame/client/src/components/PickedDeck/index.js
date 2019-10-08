@@ -30,12 +30,12 @@ function PickedDeck(){
  
     <div className="row">
     
-    <div className="col s12 m6 s2">
+    <div className="col s12 m6 l2">
     {/* <div className="card" id="deckCard" onClick=""> */}
   
     <div className="row">
     
-    <div className="col s12 m6 s2"></div>
+    <div className="col col-sm12 col-md6 col-lg2"></div>
   <FlipCard />
   <FlipCard />
   <FlipCard />

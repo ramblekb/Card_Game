@@ -9,15 +9,15 @@ function BattleDeck(){
   return (
     <div>
     
-    <div className="container-fluid" id="enemyCard">
+    <div className="container-fluid" id="BattleDeck">
     
-    <h1 className="enemyCard">Enemy Card</h1>
+    <h1 className="enemyCard">Battle Deck</h1>
     
     
  
 
     
-    <FlipCard />
+    <FlipCard/>
 
 
   </div>

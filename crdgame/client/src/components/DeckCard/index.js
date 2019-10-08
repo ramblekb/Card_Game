@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import GameCard from "../GameCard"
+import FlipCard from "../FlipCard"
 import ZoomCard from "../ZoomCard"
 
 // import { checkPropTypes } from "../../../../../../../Library/Caches/typescript/3.6/node_modules/@types/prop-types";
@@ -12,7 +12,37 @@ function DeckCard() {
 <div>
 
 
+<div id="testOne">
+<div class="row">
+    <div class="col s12 m6 l3">
+      <FlipCard />
+    </div>
+    <div class="col s12 m6 l3">
+    <FlipCard />
+    </div>
+    <div class="col s12 m6 l3">
+    <FlipCard />
+    </div>
+    <div class="col s12 m6 l3">
+    <FlipCard />
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col s12 m6 l3">
+      <FlipCard />
+    </div>
+    <div class="col s12 m6 l3">
+    <FlipCard />
+    </div>
+    <div class="col s12 m6 l3">
+    <FlipCard />
+    </div>
+    <div class="col s12 m6 l3">
+    <FlipCard />
+    </div>
+  </div>
+  </div>
 
 
     <div className="container-fluid pickedDeck">
@@ -36,9 +66,7 @@ function DeckCard() {
 
      
 
-  <ZoomCard />
-  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />
-  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />  <ZoomCard />
+  
    
 
 
