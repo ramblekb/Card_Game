@@ -32,7 +32,6 @@ function GameCarder() {
       </div>
     </div>
 
-
   );
 }
 

@@ -39,7 +39,7 @@ body {
   .card {
       color-adjust: gray;
       background: rgb(242, 193, 252);
-      border-radius: 6px;
+      border-radius:6px;
       width: 100px;
       height: 140px;
     /* padding-inline: 1rem; */
