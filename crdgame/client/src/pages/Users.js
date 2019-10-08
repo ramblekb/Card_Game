@@ -7,6 +7,7 @@ import { FirebaseContext } from '../components/Firebase';
 const Users = () => (
     <div>
         <Nav />
+
         <FirebaseContext.Consumer>
             {firebase => <BattleReady firebase={firebase} />}
         </FirebaseContext.Consumer>

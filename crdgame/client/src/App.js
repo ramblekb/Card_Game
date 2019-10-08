@@ -10,6 +10,7 @@ import VerseP from './pages/VerseP';
 
 
 
+import Battle from './pages/Users';
 
 
 function App() {

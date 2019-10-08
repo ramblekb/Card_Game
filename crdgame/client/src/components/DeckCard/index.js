@@ -6,7 +6,7 @@ import ZoomCard from "../ZoomCard"
 // import { checkPropTypes } from "../../../../../../../Library/Caches/typescript/3.6/node_modules/@types/prop-types";
 
 // insert props in DeckCard
-function DeckCard() {
+function DeckCard(props) {
   return (
 
 <div>
@@ -76,6 +76,20 @@ function DeckCard() {
    </div>
    </div>
  
+    <div>
+      <div className="container-fluid pickedDeck">
+
+        <h1 className="pickDeck">Pick Your Deck</h1>
+        <div className="divider"></div>
+
+        <div className="row">
+        {props.allCard.map(Card => (
+        <GameCard Card = {Card} onClick={props.cardClicked}/>
+            ))}
+        </div>
+      </div>
+    </div>
+
   );
 }
 
