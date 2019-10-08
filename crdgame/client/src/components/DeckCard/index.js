@@ -2,6 +2,8 @@ import React from "react";
 import "./style.css";
 import FlipCard from "../FlipCard"
 import ZoomCard from "../ZoomCard"
+import GameCard from "../GameCard"
+
 
 // import { checkPropTypes } from "../../../../../../../Library/Caches/typescript/3.6/node_modules/@types/prop-types";
 
@@ -66,17 +68,7 @@ function DeckCard(props) {
 
      
 
-  
-   
-
-
-
-
-   </div>
-   </div>
-   </div>
- 
-    <div>
+<div>
       <div className="container-fluid pickedDeck">
 
         <h1 className="pickDeck">Pick Your Deck</h1>
@@ -89,6 +81,28 @@ function DeckCard(props) {
         </div>
       </div>
     </div>
+   
+
+
+
+
+   </div>
+   </div>
+   </div>
+ 
+    // <div>
+    //   <div className="container-fluid pickedDeck">
+
+    //     <h1 className="pickDeck">Pick Your Deck</h1>
+    //     <div className="divider"></div>
+
+    //     <div className="row">
+    //     {props.allCard.map(Card => (
+    //     <GameCard Card = {Card} onClick={props.cardClicked}/>
+    //         ))}
+    //     </div>
+    //   </div>
+    // </div>
 
   );
 }

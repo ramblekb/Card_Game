@@ -10,7 +10,7 @@ import VerseP from './pages/VerseP';
 
 
 
-import Battle from './pages/Users';
+import Users from './pages/Users';
 
 
 function App() {
@@ -30,6 +30,9 @@ function App() {
     <Route exact path="/home" component={Home} />
     <Route exact path="/griddy" component={Griddy} />
     <Route exact path="/verseP" component={VerseP} />
+
+    <Route exact path="/users" component={Users} />
+
 
 
 
