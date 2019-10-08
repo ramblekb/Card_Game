@@ -3,7 +3,7 @@ import React from 'react';
 // import Nav from './components/Nav';
 // import Login from './pages/Login';
 import Deck from './pages/Deck';
-import Battle from './pages/Battle';
+import Battle from './pages/Users';
 
 
 function App() {
