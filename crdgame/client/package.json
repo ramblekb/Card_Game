@@ -2,6 +2,7 @@
   "name": "crdgame",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@material-ui/core": "^4.5.0",
     "axios": "^0.19.0",

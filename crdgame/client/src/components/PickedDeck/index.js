@@ -4,91 +4,33 @@ import ZoomCard from '../ZoomCard'
 import FlipCard from '../FlipCard'
 
 import Mars from '../images/mars.jpg'
+// import GameCard from "../GameCard"
 
-
-
-function PickedDeck(){
+function PickedDeck(props) {
 
   return (
     <div>
-
-    {/* <div className="container-fluid">
-    <button className="waves-effect waves-light btn" id="saveB">Save Deck</button>
-    <button className="waves-effect waves-light btn" id="deleteB">Clear Deck</button>
-    <h1 className="pickDeck">Your Cards (Picked Deck)</h1>
-    <div className="divider"></div> */}
-
-    {/* <div className="float-right">
-    
-    </div> */}
-
-    {/* <div className="container-fluid"> */}
-   
-
     <div class="row">
     <div class="col s12 m6 l2">
-    <button className="waves-effect waves-light btn" id="saveB">Save Deck</button>
-    <button className="waves-effect waves-light btn" id="deleteB">Clear Deck</button>
+    <button className="waves-effect waves-light btn" id="saveB" onClick={props.handleSave}>Save Deck</button>
+    <button className="waves-effect waves-light btn" id="deleteB" onClick={props.handleSave}>Clear Deck</button>
     <h1 className="pickDeck">Your Cards (Picked Deck)</h1>
     {/* <div className="divider"></div> */}
-
-  
     <div id="testOne">
-
-    {/* <tbody> */}
-      {/* <table>
-        
-
-        <tbody>
-          <tr>
-            <td>CARD NAME
-            <FlipCard />
-            </td>
-            <td>CARD NAME
-            <FlipCard /></td>
-            <td>CARD NAME
-            <FlipCard /></td>
-            <td>CARD NAME
-            <FlipCard /></td>
-            <td>CARD NAME
-            <FlipCard /></td>
-            <td>CARD NAME
-            <FlipCard /></td>
-          </tr>
-
-          </tbody>
-      </table> */}
-
-
     <div class="row">
     <div class="col s12 m6 l2">
-      <FlipCard />
+    {props.deck.map(Card => (
+            <FlipCard Card={Card} />
+          ))}
     </div>
     <div class="col s12 m6 l2">
     <FlipCard />
     </div>
-    <div class="col s12 m6 l2">
-    <FlipCard />
-    </div>
-    <div class="col s12 m6 l2">
-    <FlipCard />
-    </div>
-    <div class="col s12 m6 l2">
-    <FlipCard />
-    </div>
-    <div class="col s12 m6 l2">
-    <FlipCard />
-    </div>
-    
   </div>
-
-
-</div> 
 </div>
 </div>
 </div>
-
-
+</div>
   )
 }
 export default PickedDeck;

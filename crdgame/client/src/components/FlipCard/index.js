@@ -7,32 +7,32 @@ import Container from '@material-ui/core/Container';
 
 
 // insert props in DeckCard
-function FlipCard() {
+function FlipCard(props) {
     return (
 <div>
 <Container maxWidth="sm">
-            <div className="flip-card">
+            <div className="flip-card" data-id={props.Card._id} onClick={props.onClick}>
                 <img
                     className="flip-card-front"
-                    src={Jupiter}
+                    src={props.Card.img}
                     onClick=""
                     alt="Avatar"
                 ></img>
 
                 <div className="flip-card-inner">
                     <div className="flip-card-back red fancy" id="flipCardImg">
-                        <h1 className="cardTitle red fancy">Space Card</h1>
-                        <p className="red fancy">Jupiter</p>
+                        <h1 className="cardTitle red fancy">{props.Card.name}</h1>
+                        <p className="red fancy">{props.Card.name}</p>
                         <div className="costDamage">
                             
                             <span className="collection-item">
                                 Cost
-                <li className="badge">0</li>
+                <li className="badge">{props.Card.cost}</li>
                             </span>
 
                             <span className="collection-item">
                                 Demage
-                <li className="badge">1</li>
+                <li className="badge">{props.Card.damage}</li>
                             </span>
                         </div>
                     </div>

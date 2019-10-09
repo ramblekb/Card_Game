@@ -3,13 +3,9 @@ import React from 'react';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Deck from './pages/Deck';
+import Users from './pages/Users';
 import Battle from './pages/Battle';
 import Home from './pages/Home';
-import Griddy from './pages/Griddy';
-import VerseP from './pages/VerseP';
-import Fight from './pages/Fight';
-
-
 
 
 
@@ -20,7 +16,7 @@ function App() {
     <div>
     
     <Switch>
-    <Route exact path="/" component={Home} />
+    <Route exact path="/" component={Users} />
     <Route exact path="/login" component={Login} />
     <Route exact path="/signup" component={Signup} />
 
@@ -29,9 +25,9 @@ function App() {
     <Route exact path="/battle" component={Battle} />
 
     <Route exact path="/home" component={Home} />
-    <Route exact path="/griddy" component={Griddy} />
+    {/* <Route exact path="/griddy" component={Griddy} />
     <Route exact path="/verseP" component={VerseP} />
-    <Route exact path="/fight" component={Fight} />
+    <Route exact path="/fight" component={Fight} /> */}
 
 
 
