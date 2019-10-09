@@ -71,7 +71,7 @@ class Login extends React.Component{
         </div>
         }
         else {
-            return <Redirect to={{pathname: "/books", state: {loggedIn: true}}}/>
+            return <Redirect to={{pathname: "/deck", state: {loggedIn: true}}}/>
         }
     }
 

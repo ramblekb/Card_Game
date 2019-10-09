@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from 'react';
 // import Nav from './components/Nav';
-// import Login from './pages/Login';
+import Login from './components/Login';
 import Deck from './pages/Deck';
 import Battle from './pages/Users';
+import Signup from "./components/Sign-up"
 
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
     <div>
     
     <Switch>
-    <Route exact path="/" component={Deck} />
+    <Route exact path="/login" component={Login} />
+    <Route exact path="/signup" component={Signup} />
+    <Route exact path="/" component={Login} />
     {/* <Route exact path="/login" component={Login} /> */}
     <Route exact path="/deck" component={Deck} />
 

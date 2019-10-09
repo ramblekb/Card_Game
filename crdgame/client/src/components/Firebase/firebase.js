@@ -19,6 +19,7 @@ class Firebase {
         this.db = app.database();
     }
 
+    battlesRef = () => this.db.ref("/battles");
     connectionsRef = () => this.db.ref("/connections");
     connectedRef = () => this.db.ref(".info/connected");
     // *** User API ***
