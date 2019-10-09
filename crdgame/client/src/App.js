@@ -1,16 +1,10 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from 'react';
-import Signup from './pages/Signup';
-import Login from './pages/Login';
+// import Nav from './components/Nav';
+import Login from './components/Login';
 import Deck from './pages/Deck';
-import Battle from './pages/Battle';
-import Home from './pages/Home';
-import Griddy from './pages/Griddy';
-import VerseP from './pages/VerseP';
-
-
-
-import Users from './pages/Users';
+import Battle from './pages/Users';
+import Signup from "./components/Sign-up"
 
 
 function App() {
@@ -19,10 +13,10 @@ function App() {
     <div>
     
     <Switch>
-    <Route exact path="/" component={Home} />
     <Route exact path="/login" component={Login} />
     <Route exact path="/signup" component={Signup} />
-
+    <Route exact path="/" component={Login} />
+    {/* <Route exact path="/login" component={Login} /> */}
     <Route exact path="/deck" component={Deck} />
 
     <Route exact path="/battle" component={Battle} />
