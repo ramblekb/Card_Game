@@ -13,38 +13,53 @@ class Deck extends Component {
     allCard: [],
     deck: [],
     deckId: [],
-    userId: []
+    userId: ""
   };
   componentDidMount() {
     this.loadCards();
   }
 
-  // Loads all books  and sets them to this.state.books
   loadCards = () => {
-    // let accessString = localStorage.getItem('JWT');
-    // if(accessString == null){
-    //   accessString = Cookies.get('JWT');
-    // }
+    let accessString = localStorage.getItem('JWT');
+    if(accessString == null){
+      accessString = Cookies.get('JWT');
+    }
     // axios.get("/api/cards",{headers: { Authorization: `JWT ${accessString}` }})
-    axios.get("/api/cards")
+    axios.get("/api/cards",{headers: { Authorization: `JWT ${accessString}` }})
       .then(res =>
         this.setState({ loggedIn: true, allCard: res.data })
       )
       .catch(err => console.log(err));
-
-    // axios.get("/api/users/" + "5d96a88b724f144104a912b4")
-    //   .then(res =>{
-    //     this.setState({ userId: res.data })
-    //   }
-    //   )
-    //   .catch(err => console.log(err));
+    this.setState({userId: this.parseJwt(accessString).id})
+    let user = "/api/users/" + this.parseJwt(accessString).id
+    axios.get(user, {headers: { Authorization: `JWT ${accessString}` }})
+      .then(res =>{
+        console.log(res);
+        
+      }
+      )
+      .catch(err => console.log(err));
   };
 
+  parseJwt = (token) => {
+    var base64Url = token.split('.')[1];
+    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+
+    return JSON.parse(jsonPayload);
+};
+
   cardClicked = event => {
+    let accessString = localStorage.getItem('JWT');
+    if(accessString == null){
+      accessString = Cookies.get('JWT');
+    }
     console.log(this.state.deckId)
     console.log(event.currentTarget.attributes.getNamedItem("data-id").value)
     let selected = event.currentTarget.attributes.getNamedItem("data-id").value
-    axios.get("/api/cards/" + selected)
+    axios.get("/api/cards/" + selected,{headers: { Authorization: `JWT ${accessString}` }})
       .then(res => {
         let yourDeck = this.state.deck;
         let yourDeckId = this.state.deckId;
@@ -60,9 +75,10 @@ class Deck extends Component {
 
   handleSave = event => {
     event.preventDefault()
+    let accessString = localStorage.getItem('JWT');
       console.log(this.state.deckId.length)
     if (this.state.deckId.length === 6) {
-      axios.put("/api/users/" + "5d96a88b724f144104a912b4", {deck: this.state.deckId})
+      axios.put("/api/users/" + this.parseJwt(accessString).id, {deck: this.state.deckId},{headers: { Authorization: `JWT ${accessString}` }})
       .then(res =>{
         console.log(this.state.deckId.length)
       }

@@ -78,7 +78,7 @@ class Login extends React.Component{
         </Container>
         }
         else {
-            return <Redirect to={{pathname: "/books", state: {loggedIn: true}}}/>
+            return <Redirect to={{pathname: "/deck", state: {loggedIn: true}}}/>
         }
     }
 

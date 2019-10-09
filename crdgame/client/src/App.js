@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from 'react';
+<<<<<<< HEAD
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Deck from './pages/Deck';
@@ -8,6 +9,13 @@ import Battle from './pages/Battle';
 import Home from './pages/Home';
 
 
+=======
+// import Nav from './components/Nav';
+import Login from './components/Login';
+import Deck from './pages/Deck';
+import Battle from './pages/Users';
+import Signup from "./components/Sign-up"
+>>>>>>> ac75f8d041b3c1c0d8080f2188a6747e28d6162c
 
 
 function App() {
@@ -16,10 +24,17 @@ function App() {
     <div>
     
     <Switch>
+<<<<<<< HEAD
     <Route exact path="/" component={Users} />
     <Route exact path="/login" component={Login} />
     <Route exact path="/signup" component={Signup} />
 
+=======
+    <Route exact path="/login" component={Login} />
+    <Route exact path="/signup" component={Signup} />
+    <Route exact path="/" component={Login} />
+    {/* <Route exact path="/login" component={Login} /> */}
+>>>>>>> ac75f8d041b3c1c0d8080f2188a6747e28d6162c
     <Route exact path="/deck" component={Deck} />
 
     <Route exact path="/battle" component={Battle} />
