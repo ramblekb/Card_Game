@@ -1,36 +1,34 @@
 import React from 'react'
 import "./style.css";
-import ZoomCard from '../ZoomCard'
-import FlipCard from '../FlipCard'
+import GameCard from "../GameCard"
 
-import Mars from '../images/mars.jpg'
-// import GameCard from "../GameCard"
+
 
 function PickedDeck(props) {
 
+  // maybe onClick event listener here 
   return (
     <div>
-    <div class="row">
-    <div class="col s12 m6 l2">
-    <button className="waves-effect waves-light btn" id="saveB" onClick={props.handleSave}>Save Deck</button>
-    <button className="waves-effect waves-light btn" id="deleteB" onClick={props.handleSave}>Clear Deck</button>
-    <h1 className="pickDeck">Your Cards (Picked Deck)</h1>
-    {/* <div className="divider"></div> */}
-    <div id="testOne">
-    <div class="row">
-    <div class="col s12 m6 l2">
-    {props.deck.map(Card => (
-            <FlipCard Card={Card} />
+
+      <div className="container-fluid">
+        <div className="float-right">
+          <a className="waves-effect waves-light btn" onClick={props.handleSave}>Save Deck</a>
+        </div>
+
+        <h1 className="pickedDeck">Your Deck</h1>
+
+        <div className="divider"></div>
+
+
+        <div className="row">
+          {props.deck.map(Card => (
+            <GameCard Card={Card} />
           ))}
+
+        </div>
+      </div>
     </div>
-    <div class="col s12 m6 l2">
-    <FlipCard />
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
+
   )
 }
 export default PickedDeck;

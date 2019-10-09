@@ -1,9 +1,6 @@
 import React from "react"
 import Axios from "axios"
 import {Redirect} from "react-router-dom"
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-
 
 class Signup extends React.Component {
     constructor(props){
@@ -45,17 +42,13 @@ class Signup extends React.Component {
 
     render(){
         if(!this.state.signedUp) {
-        return 
-        
-        <div className="container">
+        return <div className="container">
         <form>
-        <Container>
         Username: <input type="text" name="username" class="form-control" value={this.state.username} onChange={this.handleChange} /><br />
         Password: <input type="password" name="password" class="form-control" value={this.state.password} onChange={this.handleChange} /><br />
         Confirm Password: <input type="password" class="form-control" name="confirmPassword" value={this.state.confirmPassword} onChange={this.handleChange} /><br />
         Email: <input type="text" name="email" class="form-control" value={this.state.email} onChange={this.handleChange}/><br />
         <button type="submit" className="btn-success" onClick={this.signupUser}>Sign up</button>
-        </Container>
         </form>
         <br/>
         <div class="alert alert-danger" role="alert" hidden={!this.state.badPassword}>
