@@ -1,9 +1,10 @@
 /* Container needed to position the overlay. Adjust the width as needed */
 #zoomCard {
-  background-color: transparent;
-  width: 180px;
-  height: 180px;
+  background-color: rgb(102, 255, 0);
+  width: 240px;
+  height: 240px;
   border: 1px solid #f1f1f1;
+  margin-bottom: 3%;
   }
   
   /* Make the image to responsive */
@@ -15,13 +16,14 @@ padding-top: 15px;
   }
   
   /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  
+      /* overflow: hidden; */
   .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: transparent;
-    /* overflow: hidden; */
     width: 100%;
     height: 100%;
     transform: scale(0);

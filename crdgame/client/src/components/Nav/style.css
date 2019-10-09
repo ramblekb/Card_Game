@@ -5,11 +5,13 @@
   }
 
 .header {
-    /* align-content: center; */
     position: relative;
     text-align: center;
     width: 100%;
 }
 
+.tabs tabs-transparent {
+  width: 100%;
+}
 
 

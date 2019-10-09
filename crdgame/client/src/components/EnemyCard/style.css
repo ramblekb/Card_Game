@@ -1,22 +1,14 @@
 
 
 #enemyCard {
-    width: 30%;
+    width: 40%;
+    font-size: 20px;
 }
 
 
-.enemyCard {
-    
-    font-size: .5cm;
-    padding-top: 1rem;
-    position: relative;
-    text-align: right;
-    font-style: cursive;
-    color: rgb(22, 4, 46);
-    margin-top: 3rem;
-    margin-bottom: 2px;
 
-  }
+
+
 
   progress {
   /* font-size: 2rem; */

@@ -1,6 +1,6 @@
 import React from 'react'
 import Grid from '../components/Grid'
-
+import Nav from '../components/Nav'
 
 
 
@@ -10,7 +10,7 @@ import Grid from '../components/Grid'
 function Griddy(){
     return (
         <div>
-
+    <Nav />
         <Grid />
  
 </div>

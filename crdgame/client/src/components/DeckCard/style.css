@@ -16,10 +16,11 @@ body {
 
 
 .divider {
-  margin-top: .5px;
-  margin-bottom: .5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 #testOne { 
-  background-color: red;
+  background-color: rgb(113, 113, 192);
 }
+

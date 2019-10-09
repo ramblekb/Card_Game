@@ -2,6 +2,8 @@ import React from 'react'
 import DeckCard from '../components/DeckCard'
 import PickedDeck from '../components/PickedDeck'
 import Nav from '../components/Nav'
+import NuDeck from '../components/NuDeck'
+
 
 
 
@@ -10,7 +12,9 @@ function Deck(){
         <div>
         <Nav />
         
-<DeckCard />
+<NuDeck />
+
+{/* <DeckCard /> */}
 
 <PickedDeck />
 

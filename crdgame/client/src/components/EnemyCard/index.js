@@ -1,38 +1,62 @@
 import React from 'react'
 import "./style.css";
 import Meter from '../Meter'
+// import FlipCard from '../FlipCard';
+import VertIcon from '../VertIcon';
+import ZoomCard from '../ZoomCard';
 import FlipCard from '../FlipCard';
 
+
+
+// not quite a enemy card
 
 
 function EnemyCard(){
   return (
     <div>
-    
-    <div className="container-fluid" id="enemyCard">
-    
-    <h1 className="enemyCard">Enemy Card</h1>
-    
-    
- 
 
- <Meter />
-    
-    <FlipCard />
+    {/* <div className="container-fluid" id="enemyCard">Enemy Card */}
 
-  {/* <div className="row">
-      <div classname="container">
-      <div className="col s12 m6 s2"></div>
-      <div className="card" id="deckCard" onClick="">
-      <div className="img-container">
-        <img src="images/sample-1.jpg" alt="" />
-</div>
-</div>
 
-</div>
-  </div> */}
+    <div class="row">
+    <div class="col s12 m6 l2">
+ {/* <VertIcon /> */}
+
+ </div>
   </div>
+
+  <table>
+ <tbody>
+          <tr>
+            <td>Alvin
+            <FlipCard />
+            </td>
+            <td>Eclair
+            <ZoomCard /></td>
+            <td>$0.87
+            <FlipCard /></td>
+            </tr>
+        </tbody>
+        </table>
+
+<table>
+        <tbody>
+          <tr>
+            <td>Alvin
+            <FlipCard /></td>
+            <td>Eclair
+            <FlipCard /></td>
+            <td>$0.87
+            <FlipCard /></td>
+            </tr>
+        </tbody>
+        
+      </table>
+
+
   </div>
+  // </div>
+  
   
 
   )

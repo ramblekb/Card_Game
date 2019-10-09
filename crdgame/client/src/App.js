@@ -7,6 +7,8 @@ import Battle from './pages/Battle';
 import Home from './pages/Home';
 import Griddy from './pages/Griddy';
 import VerseP from './pages/VerseP';
+import Fight from './pages/Fight';
+
 
 
 
@@ -29,6 +31,8 @@ function App() {
     <Route exact path="/home" component={Home} />
     <Route exact path="/griddy" component={Griddy} />
     <Route exact path="/verseP" component={VerseP} />
+    <Route exact path="/fight" component={Fight} />
+
 
 
 

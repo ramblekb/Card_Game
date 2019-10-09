@@ -20,10 +20,11 @@ function FlipCard() {
                 ></img>
 
                 <div className="flip-card-inner">
-                    <div className="flip-card-back" id="flipCardImg">
-                        <h1 className="red fancy">Space Card</h1>
+                    <div className="flip-card-back red fancy" id="flipCardImg">
+                        <h1 className="cardTitle red fancy">Space Card</h1>
                         <p className="red fancy">Jupiter</p>
                         <div className="costDamage">
+                            
                             <span className="collection-item">
                                 Cost
                 <li className="badge">0</li>

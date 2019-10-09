@@ -1,0 +1,51 @@
+/* Container needed to position the overlay. Adjust the width as needed */
+#containerBattle {
+    background-color: red;
+    width: 340px;
+    height: 390px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 3%;
+    }
+    
+    /* Make the image to responsive */
+    .image {
+      position: relative;
+      width: 100%;
+      height: auto;
+  padding-top: 15px;
+    }
+    
+    /* The overlay effect (full height and width) - lays on top of the container and over the image */
+    
+        /* overflow: hidden; */
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      transition: .3s ease;
+    }
+    
+
+    
+    /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .card-small {
+        position: relative;
+        margin-top: 100px;
+        width: 20px;
+        height: 20px;
+    }

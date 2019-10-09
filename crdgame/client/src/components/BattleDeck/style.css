@@ -1,4 +1,4 @@
-body {
+/* body {
     background-image: url(../../saturn.jpg)
   }
   
@@ -6,7 +6,6 @@ body {
   .container-fluid {
     color-adjust: rgb(54, 1, 1);
       background: rgb(242, 193, 252);
-      /* background-image: url(../../saturn.jpg); */
       border-radius: 8px;
       height: full;
       width: 90%;
@@ -72,4 +71,4 @@ padding: 1px;
       display: block;
       margin-left: auto;
       margin-right: auto;
-    }
+    } */

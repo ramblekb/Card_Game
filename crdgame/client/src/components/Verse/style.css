@@ -26,7 +26,8 @@
   } 
 
   .red-square {
-    background-color: #FF4136;
+    /* background-color: #FF4136; */
+    margin-top: 40px;
     width: 300px;
     height: 300px;
     position: absolute;
@@ -35,7 +36,7 @@
     transform: translate(-50%, -50%);
   }
 
-
+/* 
 .purple-square-container {
   height: 100%;
   display: flex;
@@ -47,7 +48,7 @@
   background-color: #B10DC9;
   width: 300px;
   height: 300px;
-}
+} */
   
 
 

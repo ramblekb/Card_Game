@@ -11,7 +11,7 @@ function Home(){
         <div>
         <Nav />
         
-<FlipCard />
+
 
 <ZoomCard />
 
