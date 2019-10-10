@@ -13,11 +13,11 @@ function ContainerBattle() {
   return (
 
 <div>
-
+<Verticon />
 
 
 <div className="container" id="containerBattle">
-<i class="fas fa-hands-helping"></i>
+{/* <i class="fas fa-hands-helping"></i> */}
 <div className="costDamage">
 <span className="collection-item hp">
 <span className="EnemyName">SunDudes</span>
@@ -31,13 +31,12 @@ function ContainerBattle() {
 <li className="badge mp">1</li>  */}
 
 
-<Verticon>
+
 <i class="fas fa-hands-helping"></i>
   <img  src={Mars} className="image">
   </img> 
 <span className="collection-item mp">MP
 <li className="badge mp">1</li> </span>
-</Verticon>
 
 
   </div>

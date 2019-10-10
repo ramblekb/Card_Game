@@ -5,10 +5,10 @@
   }
   
   .icon-bar  {
-    position: relative;
+    position: absolute;
     display: block; /* Make the links appear below each other instead of side-by-side */
     text-align: center; /* Center-align text */
-    padding: 10px; /* Add some padding */
+    padding: x; /* Add some padding */
     transition: all 0.3s ease; /* Add transition for hover effects */
     color: rgb(13, 255, 154); /* White text color */
     font-size: 30px; /* Increased font-size */
