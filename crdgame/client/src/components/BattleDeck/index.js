@@ -1,144 +1,96 @@
-// import React from 'react'
-// // import "./style.css";
-
-
-// function YouPlay(){
-
-// // maybe onClick event listener here 
-//   return (
-//     <div>
-    
-//     <div className="container-fluid">
-    
-//     <h1 className="YouPlay">Play One of Your Space Cards</h1>
-//     <div className="divider"></div>
-    
- 
-
-//     <div className="row">
-//       <div classname="container">
-//       <div className="col s12 m6 s2">
-//       <div className="card" onClick="">
-//       <div className="img-container">
-//         <img src="images/sample-1.jpg" alt="" />
-// </div>
-// </div>
-// </div>
-//   </div>
-//   </div>
-    
-//   <div className="row">
-//       <div classname="container">
-//       <div className="col s12 m6 s2">
-//       <div className="card" onClick="">
-//       <div className="img-container">
-//         <img src="images/sample-1.jpg" alt="" />
-// </div>
-// </div>
-// </div>
-//   </div>
-//   </div>
-
-//   <div className="row">
-//       <div classname="container">
-//       <div className="col s12 m6 s2">
-//       <div className="card" onClick="">
-//       <div className="img-container">
-//         <img src="images/sample-1.jpg" alt="" />
-// </div>
-// </div>
-// </div>
-//   </div>
-//   </div>
-//   </div>
-
-
- 
-// </div>
-
-  
-
-//   )
-// }
-// export default YouPlay;
-
-
-
-
-import React from 'react'
+import React, { Component } from 'react'
 import "./style.css";
-import Mars from '../mars.jpg'
+import FlipCard from "../FlipCard"
+import ContainerBattle from "../ContainerBattle"
+import ZoomCard from "../ZoomCard"
+import axios from "axios";
 
 
 
-function BattleDeck(){
 
-// maybe onClick event listener here 
-  return (
-    <div>
-    
-    <div className="container-fluid">
-    <div className="float-right">
-    {/* <a className="waves-effect waves-light btn">Save Deck</a> */}
-    </div>
-             
-    <h1 className="pickedDeck">VS CARD</h1>
-    
-    <div className="divider"></div>
-    
+
+class BattleDeck extends Component{
+    state= {
+        testCard:   {
+            name: "One",
+            img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1024px-OSIRIS_Mars_true_color.jpg",
+            color: "green",
+            cost: 5,
+            damage: "8",
+            date: new Date(Date.now())
+          }
+    }
+    cardClicked = event => {
+        let accessString = localStorage.getItem('JWT');
+        console.log(this.state.deckId)
+        console.log(event.currentTarget.attributes.getNamedItem("data-id").value)
+        let selected = event.currentTarget.attributes.getNamedItem("data-id").value
+        axios.get("/api/cards/" + selected,{headers: { Authorization: `JWT ${accessString}` }})
+          .then(res => {
+            let yourDeck = this.state.deck;
+            let yourDeckId = this.state.deckId;
+            if ((yourDeckId.length < 6) && (yourDeckId.indexOf(selected) < 0)) {
+              yourDeck.push(res.data)
+              yourDeckId.push(selected)
+              this.setState({ deck: yourDeck, deckId: yourDeckId })
+            }
+          }
+          )
+          .catch(err => console.log(err));
+      }
+   render() 
+  {return (
+  <div>
+    <div class="row">
+    <div class="col s12 m6 l2">
+
+</div>
+</div>
+
+
+  <table>
+ <tbody>
  
-    <div className="row">
+          <tr>
+          <td>
+          {/* ENEMY CARD */}
+            <ContainerBattle>
+            <td title= "badGuy"></td>
+            </ContainerBattle>
+            </td>
+            
+            <td>
+            {/* YOUR CARD */}
+            <ContainerBattle>
+            <td title= "goodGuy"></td>
+</ContainerBattle>
+            </td>
+            </tr>
+        </tbody>
+        </table>
 
-      {/* <div classname="container" id="decker">
-      <div className="col s12 m6 s2">
-      <div className="card" onClick="">
-      <div className="con">CardName</div>
-      <div className="img-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1024px-OSIRIS_Mars_true_color.jpg" alt="smiley" />
-</div>
-      <div className="con">0</div>
+<table>
+<h1 className="pickDeck">Choose Your Card To Play</h1>
 
-</div>
-</div>
-  </div> */}
+        <tbody>
+          <tr>
+            <td>Card Name
+            <FlipCard Card={this.state.testCard} onClick={this.cardClicked}/></td>
+            <td>Card Name
+            <FlipCard Card={this.state.testCard} onClick={this.cardClicked}/></td>
 
-  <div className="row">
-      <div classname="container">
-      <div className="col s12 m6 s2">
-      <div className="card" id="deckCard" onClick="">
-      <div className="img-container">
-        <img src={Mars} alt="" />
-</div>
-</div>
-</div>
-  </div>
-  </div>
-
-  
+            <td>Card 
+            <FlipCard Card={this.state.testCard} onClick={this.cardClicked}/></td>
+            </tr>
+        </tbody>
+        
+      </table>
 
 
-  
-
-  {/* <div className="row">
-      <div classname="container">
-      <div className="col s12 m6 s2">
-      <div className="card" id="deckCard" onClick="">
-      <div className="img-container">
-        <img src="images/sample-1.jpg" alt="" />
 </div>
-</div>
-</div>
-  </div>
-  </div> */}
-    
-  
 
-  
-  </div>
-  </div>
-  </div>
 
-  )
-}
+        )}
+      }
 export default BattleDeck;
-
+    

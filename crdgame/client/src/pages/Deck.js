@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import axios from "axios";
 import DeckCard from '../components/DeckCard'
 import PickedDeck from '../components/PickedDeck'
-import Title from '../components/Title'
 import Nav from '../components/Nav'
+import NuDeck from '../components/NuDeck'
+
+
 import Cookies from 'js-cookie';
 
 class Deck extends Component {
@@ -18,11 +20,12 @@ class Deck extends Component {
   }
 
   loadCards = () => {
+console.log("hi");
+
     let accessString = localStorage.getItem('JWT');
     if(accessString == null){
       accessString = Cookies.get('JWT');
     }
-    // axios.get("/api/cards",{headers: { Authorization: `JWT ${accessString}` }})
     axios.get("/api/cards",{headers: { Authorization: `JWT ${accessString}` }})
       .then(res =>
         this.setState({ loggedIn: true, allCard: res.data })
@@ -90,7 +93,6 @@ class Deck extends Component {
       <div>
         <Nav />
 
-        <Title />
 
         <DeckCard allCard={this.state.allCard} cardClicked={this.cardClicked} />
 
