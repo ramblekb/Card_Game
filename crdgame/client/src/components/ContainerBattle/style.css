@@ -1,0 +1,67 @@
+
+
+#containerBattle {
+    background-color: rgb(213, 13, 13);
+    width: 310px;
+    height: auto;
+    border: 4px solid #78d2eb;
+    }
+    
+p {
+ font-size: 11px;
+  text-align: right;
+  margin: 0%;
+  
+}
+
+    /* Make the image to responsive */
+    .image {
+      position: relative;
+      width: 120%;
+      height: auto;
+  padding: 40px;
+    }
+    
+    /* The overlay effect (full height and width) - lays on top of the container and over the image */
+    
+        /* overflow: hidden; */
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      transition: .3s ease;
+    }
+    
+
+    
+    /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+    /* .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: right;
+    } */
+
+    .card-small {
+        position: relative;
+        margin-top: 100px;
+        width: 30px;
+        height: 20px;
+    }
+
+    #enemyCard {
+      width: 40%;
+      font-size: 20px;
+  }
+
+  .fas-fa-hands-helping {
+  align-items: center;
+  }
