@@ -52,14 +52,18 @@ class BattleDeck extends Component{
  <tbody>
  
           <tr>
+          <td>
+          {/* ENEMY CARD */}
             <ContainerBattle>
-            <td title= "Enemy Card"></td>
+            <td title= "badGuy"></td>
             </ContainerBattle>
+            </td>
             
-         
-         
-            <td>Your Card
-            <ContainerBattle />
+            <td>
+            {/* YOUR CARD */}
+            <ContainerBattle>
+            <td title= "goodGuy"></td>
+</ContainerBattle>
             </td>
             </tr>
         </tbody>

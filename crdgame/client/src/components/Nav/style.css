@@ -14,4 +14,7 @@
   width: 100%;
 }
 
-
+.wrapper {
+  position: center;
+  max-width: 100%;
+}

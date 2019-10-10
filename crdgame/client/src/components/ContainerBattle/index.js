@@ -3,6 +3,10 @@ import "./style.css";
 import Mars from '../images/mars.jpg'
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Health from '../Health';
+import Verticon from '../VertIcon';
+
+
 
 // insert props in DeckCard
 function ContainerBattle() {
@@ -10,37 +14,38 @@ function ContainerBattle() {
 
 <div>
 
-<div className="container" id="containerBattle">
 
+
+<div className="container" id="containerBattle">
+<i class="fas fa-hands-helping"></i>
 <div className="costDamage">
 <span className="collection-item hp">
 <span className="EnemyName">SunDudes</span>
-
-
-{/* <span className="collection-item hp">HP */}
-
-{/* <li className="EnemyName">SunDudes</li> */}
-
-
-{/* <li className="badge hp">0</li> */}
-{/* <li className="EnemyName">SunDudes</li> */}
+<Health />
 </span>
-
-
 </div>
-{/* insert the "ENEMY CARD" here */}
+{/* <i class="fas fa-hands-helping"></i>
   <img  src={Mars} className="image">
-
-  
   </img> 
-
 <span className="collection-item mp">MP
+<li className="badge mp">1</li>  */}
 
-<li className="badge np">1</li> 
-</span>
+
+<Verticon>
+<i class="fas fa-hands-helping"></i>
+  <img  src={Mars} className="image">
+  </img> 
+<span className="collection-item mp">MP
+<li className="badge mp">1</li> </span>
+</Verticon>
+
 
   </div>
   </div>
+  
+  
+
+
 
   )}
 export default ContainerBattle;

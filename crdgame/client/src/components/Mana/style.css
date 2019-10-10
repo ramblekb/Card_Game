@@ -1,17 +1,32 @@
 
-.gauge {
+/* .gauge {
     transform: rotate(-90deg)
   }
+   */
+
+  #gauge {
+    transform: rotate(0deg);
+    margin-left: 50%;
+    margin-top: 0%;
+    font-size: 40px;
+  }
   
+  p {
+text-shadow: rgb(31, 20, 250);
+font-size: 17px;
+margin-top: 0%;
+  }  
   
-  
-  /* p.event_desc {
+  .event_desc {
     font: bold 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 14px;
+    /* width: 70%; */
     height:75px;
     margin: 0px;
     display: table-cell;
     vertical-align: middle;
     padding: 10px;
     border: 1px solid #f00;
-  } */
+  }
+
+  

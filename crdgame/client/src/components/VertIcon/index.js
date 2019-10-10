@@ -14,9 +14,11 @@ function VertIcon(){
     
     <div className="icon-bar">
 
-  <div className="active" href="#"><i className="fas fa-carrot"></i></div>
-  <div href="#"><i className="fas fa-pizza-slice"></i></div>
-  <div href="#"><i className="fas fa-ice-cream"></i></div>
+  <div className="active" href="#">
+  <i className="fas fa-carrot"></i></div>
+    <div href="#"><i className="fas fa-ice-cream"></i></div>
+    
+  <div href="#"><i className=""></i></div>
   <div href="#"><i className="fas fa-hotdog"></i></div>
   <div href="#"><i className="fas fa-pepper-hot"></i></div>
   <div href="#"><i className="fas fa-hamburger"></i></div>

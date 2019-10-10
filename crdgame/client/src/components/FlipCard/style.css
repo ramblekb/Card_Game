@@ -4,7 +4,7 @@
     width: 180px;
     height: 180px;
     border: 1px solid #f1f1f1;
-    perspective: 500px; /* Remove this if you don't want the 3D effect */
+    perspective: 300px; /* Remove this if you don't want the 3D effect */
   }
   
   /* This container is needed to position the front and back side */
@@ -13,7 +13,7 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 2s;
+    transition: transform 1.75s;
     transform-style: preserve-3d;
   }
   
