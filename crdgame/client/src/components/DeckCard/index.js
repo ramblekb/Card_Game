@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import GameCard from "../GameCard"
+import FlipCard from "../FlipCard"
 
 function DeckCard(props) {
   return (
@@ -13,7 +13,7 @@ function DeckCard(props) {
 ​
       <div className="row">
         {props.allCard.map(Card => (
-        <GameCard Card = {Card} onClick={props.cardClicked}/>
+        <FlipCard Card = {Card} onClick={props.cardClicked}/>
             ))}
         </div>
       </div>

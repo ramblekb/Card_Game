@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css";
-import GameCard from "../GameCard"
+import FlipCard from "../FlipCard"
 
 
 
@@ -22,7 +22,7 @@ function PickedDeck(props) {
 
         <div className="row">
           {props.deck.map(Card => (
-            <GameCard Card={Card} />
+            <FlipCard Card={Card} />
           ))}
 
         </div>

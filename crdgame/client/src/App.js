@@ -3,7 +3,11 @@ import React from 'react';
 import Login from './components/Login/Login';
 import Deck from './pages/Deck';
 import Battle from './pages/Users';
-import Signup from "./components/Signup/Sign-up"
+import Signup from "./components/Signup/Sign-up";
+import BattlePage from "./pages/Battle";
+import Fight from "./pages/Fight"
+
+
 
 
 function App() {
@@ -18,7 +22,8 @@ function App() {
     <Route exact path="/signup" component={Signup} />
     <Route exact path="/" component={Login} />
     <Route exact path="/deck" component={Deck} />
-
+    <Route exact path="/battlepage" component={BattlePage} />
+    <Route exact path="/fight" component={Battle} />
     <Route exact path="/battle" component={Battle} />
 
    
