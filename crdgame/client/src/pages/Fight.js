@@ -16,6 +16,7 @@ function Fight(){
         <Nav />
 
 <EnemyCard />
+
 </div>
 
         )

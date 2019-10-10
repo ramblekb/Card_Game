@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../components/Nav'
-import Verse from '../components/Verse'
+import NuDeck from '../components/NuDeck'
 
 
 
@@ -10,7 +10,7 @@ function VerseP(){
 <div>
 <Nav />
 
-<Verse />
+<NuDeck />
 
 </div>
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import "./style.css";
-import Meter from '../Meter'
 // import FlipCard from '../FlipCard';
 import VertIcon from '../VertIcon';
 import ZoomCard from '../ZoomCard';

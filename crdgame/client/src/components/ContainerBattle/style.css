@@ -7,6 +7,12 @@
     margin-bottom: 3%;
     }
     
+p {
+  line-height: 0%;
+  text-align: right;
+  
+}
+
     /* Make the image to responsive */
     .image {
       position: relative;

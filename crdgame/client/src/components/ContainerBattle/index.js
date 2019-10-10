@@ -13,21 +13,28 @@ function ContainerBattle() {
 <div className="container" id="containerBattle">
 
 <div className="costDamage">
-<span className="collection-item hp">HP
+<span className="collection-item hp">
+<span className="EnemyName">SunDudes</span>
 
 
-<li className="badge hp">0</li>
+{/* <span className="collection-item hp">HP */}
+
+{/* <li className="EnemyName">SunDudes</li> */}
+
+
+{/* <li className="badge hp">0</li> */}
+{/* <li className="EnemyName">SunDudes</li> */}
 </span>
 
 
 </div>
-
+{/* insert the "ENEMY CARD" here */}
   <img  src={Mars} className="image">
 
   
   </img> 
 
-<span className="collection-item np">NP
+<span className="collection-item mp">MP
 
 <li className="badge np">1</li> 
 </span>
