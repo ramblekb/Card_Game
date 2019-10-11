@@ -6,6 +6,7 @@ class BattleReady extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            redirect: false,
             allUsers: [],
             numUsers: 0,
             room: "",
@@ -46,7 +47,9 @@ class BattleReady extends Component {
                             console.log("The updated room " + changedPost);
                             localStorage.setItem("room", changedPost)
                             self.props.firebase.connectionsRef().child(id).remove();
-                            return <Redirect to='/battlepage' />
+                            this.setState({
+                                redirect: true
+                              })
                         })
                     }
                 });
@@ -85,7 +88,9 @@ class BattleReady extends Component {
             self.props.firebase.connectionsRef().child(selected).update({ room: room })
             localStorage.setItem("room", room)
             self.props.firebase.connectionsRef().child(self.state.userId).remove();
-            return <Redirect to='/battlepage' />
+            this.setState({
+                redirect: true
+              })
         });
         var bat = self.props.firebase.battlesRef().update({
             [room]:
@@ -105,11 +110,16 @@ class BattleReady extends Component {
 
         return JSON.parse(jsonPayload);
     };
-
+    renderRedirect = () => {
+        if (this.state.redirect) {
+          return <Redirect to='/battlepage' />
+        }
+      }
 
     render() {
         return (
             <div className="row">
+            {this.renderRedirect()}
                 <div className="col m12">
                     <div className="card" >
                         <ul className="collection with-header">

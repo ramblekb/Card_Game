@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import "./style.css";
 import FlipCard from "../FlipCard"
 import ContainerBattle from "../ContainerBattle"
-import ZoomCard from "../ZoomCard"
+import startImg from "../images/logo192.png"
 import axios from "axios";
+import { Redirect } from 'react-router-dom'
 
 
 
@@ -11,17 +12,20 @@ import axios from "axios";
 
 class BattleDeck extends Component {
   state = {
+    redirect: false,
     yourHeath: 10,
     enemyHeath: 10,
     yourFood: 5,
     enemyFood: 5,
     yourName: "eric",
     enemyName: "kip",
-    yourActiveScr: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1024px-OSIRIS_Mars_true_color.jpg",
-    enemyActiveScr: "https://sm.mashable.com/t/mashable_in/image/p/pluto-is-a/pluto-is-a-planet-again-sorta_8fbf.910.jpg",
+    yourActiveScr: startImg,
+    enemyActiveScr: startImg,
     deck: [],
+    deckId: [],
     handCards: [{
-      name: "One",
+      _id: "5d967be701d20723843a949f",
+        name: "One",
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1024px-OSIRIS_Mars_true_color.jpg",
       color: "green",
       cost: 5,
@@ -48,25 +52,33 @@ class BattleDeck extends Component {
   }
   cardClicked = event => {
     let accessString = localStorage.getItem('JWT');
-    console.log(this.state.deckId)
-    console.log(event.currentTarget.attributes.getNamedItem("data-id").value)
+    let self =this
+    // console.log(this.state.deckId)
     let selected = event.currentTarget.attributes.getNamedItem("data-id").value
     axios.get("/api/cards/" + selected, { headers: { Authorization: `JWT ${accessString}` } })
       .then(res => {
-        let yourDeck = this.state.deck;
-        let yourDeckId = this.state.deckId;
-        if ((yourDeckId.length < 6) && (yourDeckId.indexOf(selected) < 0)) {
-          yourDeck.push(res.data)
-          yourDeckId.push(selected)
-          this.setState({ deck: yourDeck, deckId: yourDeckId })
-        }
+        let yourCard = res.data.img;
+    console.log(res)
+    let hp = self.state.enemyHeath - 8
+    let mana = self.state.yourFood - 5
+        this.setState({ yourActiveScr: yourCard, enemyHeath: hp, yourFood: mana})
       }
       )
       .catch(err => console.log(err));
+    console.log("hi")
+    // this.setState({
+    //   redirect: true
+    // })
+  }
+  renderRedirect = () => {
+    if (this.state.redirect) {
+      return <Redirect to='/battle' />
+    }
   }
   render() {
     return (
       <div>
+        {this.renderRedirect()}
         <div class="row">
           <div class="col s12 m6 l2">
 

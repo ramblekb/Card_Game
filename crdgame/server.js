@@ -100,7 +100,7 @@ app.get(
 app.use(routes);
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist"
+  process.env.MONGODB_URI || "mongodb://erickip:erickip2@ds233288.mlab.com:33288/heroku_mr2th20k"
 );
 
 app.listen(PORT, function() {
