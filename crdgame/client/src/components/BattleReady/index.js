@@ -46,7 +46,7 @@ class BattleReady extends Component {
                             console.log("The updated room " + changedPost);
                             localStorage.setItem("room", changedPost)
                             self.props.firebase.connectionsRef().child(id).remove();
-                            return <Redirect to='/deck' />
+                            return <Redirect to='/battlepage' />
                         })
                     }
                 });
@@ -85,7 +85,7 @@ class BattleReady extends Component {
             self.props.firebase.connectionsRef().child(selected).update({ room: room })
             localStorage.setItem("room", room)
             self.props.firebase.connectionsRef().child(self.state.userId).remove();
-            return <Redirect to='/deck' />
+            return <Redirect to='/battlepage' />
         });
         var bat = self.props.firebase.battlesRef().update({
             [room]:
