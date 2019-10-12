@@ -31,8 +31,8 @@ function ContainerBattle() {
 <li className="badge mp">1</li>  */}
 
 
-
-<i class="fas fa-hands-helping"></i>
+<a className="waves-effect waves-light btn">PASS</a>
+<i className="fas fa-hands-helping"></i>
   <img  src={Mars} className="image">
   </img> 
 <span className="collection-item mp">MP
