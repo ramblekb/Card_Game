@@ -139,6 +139,14 @@ const cardSeed = [
     damage: "1",
     date: new Date(Date.now())
   },
+  {
+    name: "Gila Monster",
+    img: "https://thoughtcatalog.files.wordpress.com/2018/10/nativeamericansymbols-gilamonster.jpg?resize=2000,1333&quality=95&strip=all&crop=1",
+    color: "green",
+    cost: 0,
+    damage: "1",
+    date: new Date(Date.now())
+  },
 
 
 ];
